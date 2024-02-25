@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+}
+
+button{
+  all: unset;
+  padding: 6px 16px;
+  background: #D01C28;
+  height: 32px;
+  color :white;
+  font-weight: 300;
+}
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  align-items: center;
+}
+ul{
+  display: flex;
+  gap: 24px;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 72);
+}
+.hero h1{
+  font-weight: 800;
+  line-height: 102px;
+  font-size: 108px;
+
+}
+.hero p{
+  font-weight:600 ;
+  color: rgb(110, 96, 96);
+  max-width: 404px;
+}
+.hero-btn button{
+  font-size: 24px;
+}
+.hero-btn{
+  display: flex;
+  gap: 40px;
+}
+.secondary-btn{
+  background:transparent;
+  color: rgb(16, 16, 17);
+  border: 1px solid gray;
+}
+.shopping p{
+  font-size: 14px;
+  margin-bottom: 8px;
+
+}
+.brand-icons{
+  display: flex;
+  gap: 16px;
+  
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+/* Default styles for larger screens */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media query for medium-sized screens */
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column-reverse;
+  }
+
+  .hero-content {
+      text-align: center;
+  }
+
+  .hero-btn {
+      flex-direction: column;
+      margin-top: 20px;
+  }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 576px) {
+  .container {
+      padding: 10px;
+  }
+
+  .hero-content {
+      font-size: 16px;
+  }
+
+  .hero-image img {
+      width: 100%;
+  }
+}
